@@ -65,8 +65,10 @@ end
 def gross_per_studio(collection)
   per_studio_hash = {}
   counter = 0 
+  
   while counter < collection.length do
-    if collection[counter][:studio] == per_studio_hash.key
+    studio = collection[counter][:studio]
+    if studio == per_studio_hash.key[studio]
       per_studio_hash[studio] += collection[counter][:worldwide_gross]
     else
       per_studio_hash[counter][:worldwide_gross]
