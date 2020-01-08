@@ -74,10 +74,9 @@ def gross_per_studio(collection)
       per_studio_hash[studio] = collection[counter][:worldwide_gross]
   end
   counter += 1
-  binding.pry
-  
+ 
   end
-  
+  binding.pry
 end
   # GOAL: Given an Array of Hashes where each Hash represents a movie,
   # return a Hash that includes the total worldwide_gross of all the movies from
