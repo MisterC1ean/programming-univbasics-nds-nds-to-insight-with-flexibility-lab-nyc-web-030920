@@ -74,6 +74,8 @@ def gross_per_studio(collection)
       per_studio_hash[studio] = collection[counter][:worldwide_gross]
   end
   counter += 1
+  binding.pry
+  
   end
   
 end
